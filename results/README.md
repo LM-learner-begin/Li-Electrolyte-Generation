@@ -26,9 +26,9 @@
 本模块展示了 AI 扩散模型在三维空间中创造的新型固态电解质晶体候选物。为了便于审阅，所有 CIF 结构文件已打包为压缩包，并附带了部分极品材料的 VESTA 三维渲染图。
 
 生成工作流分为三个递进的阶段：
-* 📦 **`Generated_cifs.zip` (无条件生成):** 包含 100 个由模型初步学习锂离子电解质空间拓扑后，自由探索生成的原始材料结构。
-* 📦 **`Generated_Electrolytes_prop.zip` (属性条件生成):** 包含 352 个在引入特定属性条件引导后，定向生成的高潜力电解质结构（未经力场优化，可能存在局部原子过近）。
-* 📦 **`Relaxed_Generated_Electrolytes_prop.zip` (极速结构弛豫):** 上述 352 个条件生成材料在经过机器学习力场初步优化后的形态，旨在消除晶格应力与原子碰撞。
+*  **`Generated_cifs.zip` (无条件生成):** 包含 100 个由模型初步学习锂离子电解质空间拓扑后，自由探索生成的原始材料结构。
+*  **`Generated_Electrolytes_prop.zip` (属性条件生成):** 包含 352 个在引入特定属性条件引导后，定向生成的高潜力电解质结构（未经力场优化，可能存在局部原子过近）。
+*  **`Relaxed_Generated_Electrolytes_prop.zip` (极速结构弛豫):** 上述 352 个条件生成材料在经过机器学习力场初步优化后的形态，旨在消除晶格应力与原子碰撞。
 
 *(每个分类下均精选了 10 张左右 VESTA 结构渲染图，直观展示 AI 生成的多阴离子骨架与锂离子传导通道。)*
 ---
@@ -62,9 +62,9 @@
 
 > [!TIP]
 > **如何查看更多？**
-> * 📂 **初始生成结构库**：查看 [`./Generated_cifs_img/`](./Generated_cifs_img/) 文件夹（内含 13 张精选图片）。
-> * 📂 **优化后性能结构库**：查看 [`./Relaxed_Generated_Electrolytes_prop_img/`](./Relaxed_Generated_Electrolytes_prop_img/) 文件夹（内含 10 张精选图片）。
-> * 🔬 **深度交互**：您可以下载本目录下的 `.cif` 压缩包，并使用 **VESTA** 或 **CrystalMaker** 软件手动打开，以进行任意角度的旋转、配位多面体分析及孔道尺寸测量。
+> *  **初始生成结构库**：查看 [`./Generated_cifs_img/`](./Generated_cifs_img/) 文件夹（内含 13 张精选图片）。
+> *  **优化后性能结构库**：查看 [`./Relaxed_Generated_Electrolytes_prop_img/`](./Relaxed_Generated_Electrolytes_prop_img/) 文件夹（内含 10 张精选图片）。
+> *  **深度交互**：您可以下载本目录下的 `.cif` 压缩包，并使用 **VESTA** 或 **CrystalMaker** 软件手动打开，以进行任意角度的旋转、配位多面体分析及孔道尺寸测量。
 
 ---
 
