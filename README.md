@@ -81,5 +81,5 @@ pip install -r requirements_cdvae.txt -i https://pypi.tuna.tsinghua.edu.cn/simpl
 
 ---
 
-## 🤝 致谢 (Acknowledgments)
+## 致谢 (Acknowledgments)
 底层算法架构参考并致谢开源项目 [CGCNN](https://github.com/txie-93/cgcnn) 与 [CDVAE](https://github.com/txie-93/cdvae)。
