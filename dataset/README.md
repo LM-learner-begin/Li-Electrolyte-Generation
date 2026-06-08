@@ -36,6 +36,30 @@
 ---
 
 ## 目录指南
-* `cleaned_ecw_unique_formula.csv` : 清洗后的 ECW 训练标签集。
-* `paper_ecw` :  ECW 训练cif文件，带有cgcnn训练需要的id_prop.csv
-* *(注：由于 CIF 结构文件数量庞大，已打包为压缩卷供下载训练。)*
+
+* ## 1. 电化学窗口数据集 (ECW_data)
+该数据集主要用于 **CGCNN 属性预测模型**的训练与验证。
+
+- **核心文件**: `cleaned_ecw_unique_formula.csv`
+- **关键字段**: 
+  - `formula`: 晶体化学式。
+  - `ecw_value`: 对应的理论电化学窗口数值（V）。
+- **用途**: 作为回归模型的目标值，用于评估新生成材料的电化学稳定性。
+
+---
+
+##  2. 锂固态电解质生成数据集 (Li_SSE_Dataset)
+该文件夹包含用于 **CDVAE (Crystallographic Diffusion VAE)** 模型训练的核心数据，分为无约束生成和有约束生成两类。
+
+###  li_electrolytes (无条件生成数据)
+- **文件**: `train.csv`, `val.csv`, `test.csv`
+- **说明**: 符合 CDVAE 训练格式的锂离子导体结构数据。
+- **特征**: 该子集不包含显式的属性标签，用于模型学习无机固态电解质的通用晶体拓扑骨架和原子排布模式。
+
+###  li_prop (带属性的有条件生成数据)
+- **文件**: `train.csv`, `val.csv`, `test.csv`
+- **说明**: 在晶体结构基础上，关联了来自 Materials Project 的物性标签。
+- **包含属性**:
+  - **形成能 (Formation Energy)**: 评估材料的热力学稳定性。
+  - **带隙 (Band Gap)**: 确保材料具备电子绝缘性（固态电解质的必要条件）。
+- **用途**: 用于“属性驱动”的条件生成，使模型能够定向设计低形成能、高带隙的候选电解质。
