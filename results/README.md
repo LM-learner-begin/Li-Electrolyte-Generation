@@ -32,5 +32,27 @@
 
 *(每个分类下均精选了 10 张左右 VESTA 结构渲染图，直观展示 AI 生成的多阴离子骨架与锂离子传导通道。)*
 ---
+---
+
+## 📸 晶体结构可视化 (Structure Visualization)
+
+本项目生成的候选材料已通过 VESTA 进行了高精度渲染。展示分为两个阶段：初始生成的探索性结构（Generated）与经过机器学习力场弛豫后的稳态结构（Relaxed）。
+
+### 1. 核心精选展示 (Top Highlights)
+我们从 **23 个** 精选渲染图中挑选了 3 个最具代表性的结构。这些材料在保持了高对称性的同时，展现了清晰的锂离子三维扩散通道。
+
+| 结构状态 (Status) | 典型渲染图 (Representative Image) | 化学式与亮点 (Formula & Features) |
+| :--- | :---: | :--- |
+| **弛豫后稳态** | ![Example 1](./Relaxed_Generated_Electrolytes_prop_img/YOUR_IMAGE_NAME_1.png) | **Li-Zr-O-F 体系**：经过 CHGNet 优化，结构展现出极佳的热力学稳定性与拓扑对称性。 |
+| **初始生成态** | ![Example 2](./Generated_cifs_img/YOUR_IMAGE_NAME_2.png) | **Li-P-S-Cl 体系**：AI 成功模拟了经典的硫化物/卤化物复合骨架，离子通道宽敞。 |
+| **对比优化态** | ![Example 3](./Relaxed_Generated_Electrolytes_prop_img/YOUR_IMAGE_NAME_3.png) | **Li-Sb-S 体系**：通过条件扩散模型定向生成，具备优异的电化学窗口潜力。 |
+
+> [!TIP]
+> **如何查看更多？**
+> * 📂 **初始生成结构库**：查看 [`./Generated_cifs_img/`](./Generated_cifs_img/) 文件夹（内含 13 张精选图片）。
+> * 📂 **优化后性能结构库**：查看 [`./Relaxed_Generated_Electrolytes_prop_img/`](./Relaxed_Generated_Electrolytes_prop_img/) 文件夹（内含 10 张精选图片）。
+> * 🔬 **深度交互**：您可以下载本目录下的 `.cif` 压缩包，并使用 **VESTA** 或 **CrystalMaker** 软件手动打开，以进行任意角度的旋转、配位多面体分析及孔道尺寸测量。
+
+---
 
 
