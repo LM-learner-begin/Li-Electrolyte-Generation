@@ -37,5 +37,5 @@
 
 ## 目录指南
 * `cleaned_ecw_unique_formula.csv` : 清洗后的 ECW 训练标签集。
-* `li_electrolytes.yaml` : CDVAE 专用的数据集配置文件。
+* `paper_ecw` :  ECW 训练cif文件，带有cgcnn训练需要的id_prop.csv
 * *(注：由于 CIF 结构文件数量庞大，已打包为压缩卷供下载训练。)*
