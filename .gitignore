@@ -216,3 +216,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# =======================================================
+# Li-Electrolyte-Generation 配置
+# =======================================================
+
+# 1. 忽略超大的原始生成文件夹与中间临时文件夹
+AI_Generated_Electrolytes_01/
+Relaxed_Electrolytes/
+data/stability-all/
+novel_materials/
+cif_data/
+
+# 2. 巨势相图临时输出或未清洗的超大表格
+voltage.csv
+raw_model_output.csv
+direct_ecw_predictions.csv
+
+# 3. 大文件保护：忽略所有的压缩包和超大模型权重
+*.zip
+*.tar
+*.gz
+*.tar.gz
+*.pth
+*.pth.tar
+
+# 4. 放行规则 (Crucial Exclusions)
+# 允许 results 文件夹里用于展示的核心成果上传！
+!results/epoch200_upgrade_batch/model_best.pth.tar
+!results/epoch200_upgrade_batch/checkpoint.pth.tar
+!results/epoch200_upgrade_batch/test_results.csv
