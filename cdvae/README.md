@@ -2,7 +2,8 @@
 **基于晶体扩散变分自编码器的锂离子固态电解质定向生成**
 
 本目录包含了本项目用于**生成全新晶体结构**的核心生成模型代码。
-基于开源的 **CDVAE (Crystal Diffusion Variational Autoencoder)** 架构（https://github.com/txie-93/cdvae），我们对其进行了针对性改造，使其从一个通用的材料生成器，转变为专精于“高稳定、宽窗口”锂离子固态电解质的定向生成引擎。
+基于开源的 **CDVAE (Crystal Diffusion Variational Autoencoder)** 架构（https://github.com/txie-93/cdvae），
+我们对其进行了针对性改造，使其从一个通用的材料生成器，转变为专精于“高稳定、宽窗口”锂离子固态电解质的定向生成引擎。
 
 ---
 
